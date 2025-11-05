@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Создать задачу";
+}
+
+<div class="main-createTask">
+    <h1 class="title-createTask">Создать задачу</h1>
+    <form asp-action="CreateTask" method="post">
+        <div class="form-body-createTask">
+            <label for="Title">Название задачи: </label>
+            <input type="text" name="Title" require placeholder="Введите название задачи">
+        </div>
+
+        <div class="form-body-createTask">
+            <label for="Description">Описание: </label>
+            <input type="text" name="Description" require placeholder="Введите описание задачи">
+        </div>
+        <button type="submit">Добавить задачу</button>
+    </form>
+</div>

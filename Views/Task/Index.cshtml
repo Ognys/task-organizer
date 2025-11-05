@@ -1,0 +1,31 @@
+@model List<TaskModel>
+
+@{
+    ViewData["Title"] = "Мои задачи";
+}
+
+<div class="main-index">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Список задач</h1>
+            @if (Model.Any())
+            {
+                <p class="text-muted">Задач пока нет...</p>
+            }
+            else
+            {
+                <div class="list-group">
+                @foreach(var task in Model)
+                {
+                    <form asp-action="ToggleComplete" method="post"> 
+                    <input type="hidden" name="id" value="@task.Id">
+                    <input type="checkbox" @(task.IsCompleted ? "check" : "") onchange="this.form.submit()">
+                    </form>
+                    
+                }
+                </div>
+                
+            }
+        </div>
+    </div>
+</div>
