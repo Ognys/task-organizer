@@ -1,28 +1,35 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  padding: 8px 0 5px 0;
+.nav-panel-list-month {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0;
+  list-style: none;
 }
 
-.header-nav {
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-}
-
-.header-nav-li {
-  display: flex;
+.list-item-month {
   text-align: center;
+  
 }
 
-.list-link-item {
-  text-decoration: none;
-  color: black;
+.list-item-button-month {
+  background: none;
+  border: none;
+  width: 100%;
+  background-color: rgb(119, 38, 194);
+  color: white;
+  padding: 10px 0 10px 0;
+  font-size: 17px;
+  transition: linear .2s;
+  cursor: pointer;
+  border-left: solid 1.2px;
+  border-color: gray;
 }
 
-.form-body-createTask {
-  margin-bottom: 15px;
+.list-item-button-month:hover {
+  background-color: rgb(102, 32, 167);
 }

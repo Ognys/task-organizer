@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Organaize.Models;
 using System.Collections.Generic;
+using Organaize.Services;
 
 namespace Organaize.Controllers;
+
 public class TaskController : Controller
 {
     private static List<TaskModel> tasks = new List<TaskModel>();
@@ -10,6 +12,9 @@ public class TaskController : Controller
 
     public IActionResult Index()
     {
+        var months = new MonthService();
+        ViewBag.Months = months.GenerateMonths();
+
         return View(tasks);
     }
 
@@ -31,5 +36,15 @@ public class TaskController : Controller
         return View(task);
     }
 
-    
+    [HttpPost]
+    public IActionResult ToggleComplete(int id)
+    {
+        var task = tasks.FirstOrDefault(t => t.Id == id);
+        if (task != null)
+        {
+            task.IsCompleted = !task.IsCompleted;
+        }
+
+        return RedirectToAction("Index");
+    }
 }

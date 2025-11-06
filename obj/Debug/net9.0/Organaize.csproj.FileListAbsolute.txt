@@ -83,8 +83,6 @@
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/nyp1fftjba-muycvpuwrr.gz
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/b0tod8dzry-87fc7y1x7t.gz
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/bxgdk69h1f-mlv21k5csn.gz
-/Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/9seunyklq3-h53on1fwlg.gz
-/Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/yhleiep91t-h53on1fwlg.gz
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/staticwebassets.build.json
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/staticwebassets.build.json.cache
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/staticwebassets.development.json
@@ -94,4 +92,6 @@
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/Organaize.pdb
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/Organaize.genruntimeconfig.cache
 /Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/ref/Organaize.dll
-/Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/j14lhgtnf9-r4p0m5dimk.gz
+/Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/9seunyklq3-yguki2ord5.gz
+/Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/yhleiep91t-yguki2ord5.gz
+/Users/ognys/VSCodeProjects/CSharp/Organaize/Organaize/obj/Debug/net9.0/compressed/j14lhgtnf9-6uaekogoi7.gz

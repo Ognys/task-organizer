@@ -5,27 +5,17 @@
 }
 
 <div class="main-index">
-    <div class="card">
-        <div class="card-body">
-            <h1 class="card-title">Список задач</h1>
-            @if (Model.Any())
-            {
-                <p class="text-muted">Задач пока нет...</p>
-            }
-            else
-            {
-                <div class="list-group">
-                @foreach(var task in Model)
+    <div class="panel-month">
+        <nav class="nav-panel-month">
+            <ul class="nav-panel-list-month">
+            
+                @foreach (var month in ViewBag.Months)
                 {
-                    <form asp-action="ToggleComplete" method="post"> 
-                    <input type="hidden" name="id" value="@task.Id">
-                    <input type="checkbox" @(task.IsCompleted ? "check" : "") onchange="this.form.submit()">
-                    </form>
-                    
+                    <li class="list-item-month"> 
+                        <button class="list-item-button-month">@month.ToString("MMMM")</button>
+                    </li>
                 }
-                </div>
-                
-            }
-        </div>
+            </ul>
+        </nav>
     </div>
 </div>

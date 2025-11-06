@@ -6,22 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
     <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Organaize.styles.css" asp-append-version="true" />
 </head>
 
 <body>
-    <header>
-        <nav class="header-nav">
-            <li class="header-nav-li">
-                <ul class="header-nav-ul"><a asp-controller="Task" asp-action="Index"
-                        class="link-task list-link-item">Задачи</a></ul>
-                <ul class="header-nav-ul"><a asp-controller="Task" asp-action="CreateTask"
-                        class="link-createTask list-link-item">Создать задачу</a></ul>
-            </li>
-        </nav>
-    </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
