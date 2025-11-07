@@ -8,14 +8,33 @@
     <div class="panel-month">
         <nav class="nav-panel-month">
             <ul class="nav-panel-list-month">
-            
+
                 @foreach (var month in ViewBag.Months)
                 {
-                    <li class="list-item-month"> 
-                        <button class="list-item-button-month">@month.ToString("MMMM")</button>
+                    <li class="list-item-month">
+                        <form method="get" asp-action="Index" asp-controller="Task" class="list-item-form-month">
+                            <input type="hidden" name="indexMonths" value="@ViewBag.Months.IndexOf(month)" />
+                            <button type="submit" class="list-item-button-month">@month.ToString("MMMM")</button>
+                        </form>
                     </li>
                 }
             </ul>
         </nav>
+    </div>
+
+    <div class="index-body">
+        <div class="left-panel-body">
+            <div class="left-panel-days">
+                @if (ViewBag.Days != null)
+                {
+                    foreach (var day in ViewBag.Days)
+                    {
+                         <div class="day-number">@day.Day</div>
+                    }
+                }
+            </div>
+        </div>
+        <div class="right-psnel-body">
+        </div>
     </div>
 </div>

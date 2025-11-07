@@ -1,9 +1,9 @@
 namespace Organaize.Services
 {
-    public class MonthService
+    static public class MonthService
     {
 
-        public List<DateTime> GenerateMonths(int MonthCount = 12)
+        static public List<DateTime> GenerateMonths(int MonthCount = 12)
         {
             var currentDate = DateTime.Now;
             var months = new List<DateTime>();
