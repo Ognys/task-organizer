@@ -49,8 +49,16 @@
   border-right: solid;
 }
 
-.right-psnel-body {
-  width: 70%;
+.right-panel-body {
+    width: 80%;
+  height: calc(100vh - 37px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr; 
+  align-content: stretch; 
+  overflow: hidden;
+  background-color: #fafafa;
+
 }
 
 .left-panel-days {
@@ -74,4 +82,32 @@
 
 .day-number:hover {
   background-color: rgba(130, 128, 128, 0.149);
+}
+
+.right-panel-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 10;
+  border: solid;
+}
+
+.modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.modal-window {
+  background-color: white;
+  min-width: 500px;
+  height: 300px;
 }
